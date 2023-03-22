@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--- Bootstrap Cdn ---->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!---- Icon ---->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!-- Font Awsome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- External Css  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- GOOGLE FONT CSS LINK -->
+<link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<!--OWL CAROUSEL-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<title>BeautyOfBeaches</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="loader-container">
+<div class="loader"></div>
+</div>
+
+
+
+    <header>
+
+        <!-------------------- Navbar Start  ------------------>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-2">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">
+<h3 class="font-effect-emboss"> <i class="bi bi-signpost-fill"></i> BeautyOfBeaches </h3>
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<div class="mx-auto"></div>
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link text-white" href="#"><i class="bi bi-house-door-fill"></i> Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-white" href="about us.html"><i
+class="bi bi-file-earmark-person-fill"></i> About us</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-white" href="gallery.html"><i
+    class="bi bi-file-gallery-person-fill"></i> Gallery</a>
+    </li>
+<li class="nav-item ">
+    <a class="nav-link " href="#SECTION3"> <i class="bi bi-list-columns-reverse"></i>
+      Reviews
+    </a>
+  </li>
+<li class="nav-item">
+<a class="nav-link text-white" href="#SECTION1"> <i class="bi bi-cash"></i> Pricing</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-white" href="#SECTION2"> <i class="bi bi-telephone-fill"></i>
+Contact</a>
+</li>
+<li>
+<div class="">
+<a href="login page.html"> <span type="button" class="btn btn-secondary"><i
+    class="bi bi-person-fill-lock"></i></span></a>
+<a href="touristcard.html"> <span type="button" class="btn btn-secondary"><i
+    class="bi bi-person-vcard"></i></span></a>
+</div>
+</li>
+</div>
+</ul>
+</div>
+</div>
+
+</nav>
+
+        <!------------------------ Navbar End ---------------------->
+
+    </header>
+
+    <!----------------- Banner Image --------------->
+
+<div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 mx-auto text-center">
+<h1 class="display-4 text-white">Travel Begin... <i class="bi bi-airplane-fill"></i></h1>
+<p class="text-white my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus qui
+ut assumenda quaerat.</p>
+<div class="position-relative w-75 mx-auto">
+
+<input type="text" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
+style="background-color: black;" placeholder="e.g:Hawaii">
+<button type="button"
+class="btn btn-secondary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
+style="margin-top: 7px;"> <i class="bi bi-search"></i> </button>
+</div>
+<br><br><br><br>
+<!--------------- Modal Button ------------->
+<button class="btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Register
+NOW</button>
+
+<!-------------- Modal content----------->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content" style="background-color: black;">
+<div class="modal-header">
+<h3 class="modal-title font-effect-emboss" id="exampleModalLabel"><i
+class="bi bi-signpost-fill"></i> BeautyOfBeaches</h3>
+<button type="button" class="btn btn-secondary btn-close" data-bs-dismiss="modal"
+aria-label="Close"></button>
+</div>
+
+<!----------- registration form modal body------------->
+<div class="modal-body">
+<form onsubmit="signUp(event);">
+
+<div class="row">
+<div class="col-md-6 mb-4">
+
+<div class="form-outline">
+<input type="text" id="fname" class="form-control form-control-lg"
+style="background-color: rgb(255, 255, 255);" autocomplete="off"
+required />
+<label class="form-label" for="firstName">First Name</label>
+</div>
+
+</div>
+<div class="col-md-6 mb-4">
+
+<div class="form-outline">
+<input type="text" id="lname" class="form-control form-control-lg"
+style="background-color: rgb(254, 255, 255);" autocomplete="off"
+required />
+<label class="form-label" for="lastName">Last Name</label>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-4 d-flex align-items-center">
+
+<div class="form-outline datepicker w-100">
+<input type="date" class="form-control form-control-lg" id="dob"
+style="background-color: rgb(255, 255, 255);" autocomplete="off"
+required />
+<label for="birthdayDate" class="form-label">DOB</label>
+</div>
+
+</div>
+<div class="col-md-6 mb-4">
+
+<h6 class="mb-2 pb-1" style="color: rgb(255, 255, 255);">Gender: </h6>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input primary" type="radio"
+name="inlineRadioOptions" id="femaleGender" value="option1"
+checked required />
+<label class="form-check-label" for="femaleGender">Female</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input primary" type="radio"
+name="inlineRadioOptions" id="maleGender" value="option2" />
+<label class="form-check-label" for="maleGender">Male</label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input primary" type="radio"
+name="inlineRadioOptions" id="otherGender" value="option3"
+required />
+<label class="form-check-label" for="otherGender">Other</label>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-4 pb-2">
+
+<div class="form-outline">
+<input type="email" id="email" class="form-control form-control-lg"
+style="background-color: rgb(255, 255, 255);" required />
+<label class="form-label" for="emailAddress">Email</label>
+</div>
+
+</div>
+<div class="col-md-6 mb-4 pb-2">
+
+<div class="form-outline">
+<input type="tel" id="phnum" class="form-control form-control-lg"
+style="background-color: rgb(255, 255, 255);" required />
+<label class="form-label" for="phoneNumber">Phone Number</label>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-4 pb-2">
+<label for="validationDefaultUsername"
+class="form-label">Username</label>
+<div class="input-group">
+<span class="input-group-text" id="inputGroupPrepend2">@</span>
+<input type="text" class="form-control" id="Username"
+aria-describedby="inputGroupPrepend2"
+style="background-color: rgb(255, 255, 255);" required>
+</div>
+
+</div>
+<div class="col-md-6 mb-4 pb-2">
+<label for="inputPassword4" class="form-label">Password</label>
+<input type="password" class="form-control" id="pwd"
+style="background-color: rgb(255, 255, 255);" required>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+
+<div class="form-check">
+<input class="form-check-input primary" type="checkbox"
+id="gridCheck">
+<label class="form-check-label" for="gridCheck">
+Agree
+</label>
+</div>
+
+</div>
+</div>
+
+<div class="mt-4 pt-2">
+<input class="btn btn-primary btn-lg" aria-label="Close"
+data-bs-dismiss="modal" type="submit" value="Submit" />
+</div>
+</form>
+
+
+<!--------------------- registration form modal body END --------------->
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!--=================== Modal content END ----===========-->
+
+</div>
+</div>
+</div>
+</div>
+
+<!------------======== //Banner Img end==========---------------->
+
+<!--==================== SERVICES================ -->
+<section id="services">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-primary">Our Services Over The Globe <i class="bi bi-globe-americas"></i></h6>
+<h1>Trending Location<i class="bi bi-geo-alt-fill"></i></h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect bounceInUp">
+<div class="">
+<a href="#"><img src="Img/Copacabana, Rio de Janeiro, Brazil.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">Copacabana, Rio de Janeiro, Brazil</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect">
+<div class="">
+<a href="#"><img src="Img/Navagio Beach, Zakynthos, Greece.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">Navagio Beach, Zakynthos, Greece</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect">
+<div class="">
+<a href="#"><img src="Img/Renaissance Island, Aruba.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">Renaissance Island, Aruba</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect">
+<div class="">
+<a href="#"><img src="Img/Santa Monica Beach, California.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">Santa Monica Beach, California</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect">
+<div class="">
+<a href="#"><img src="Img/South Beach, Miami, Florida.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">South Beach, Miami, Florida</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="service card-effect">
+<div class="">
+<a href="#"><img src="Img/Waikiki, Honolulu, Hawaii.webp" alt=""></a>
+</div>
+<h5 class="mt-4 mb-2">Waikiki, Honolulu, Hawaii</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+perferendis </p>
+</div>
+</div>
+</div>
+</div>
+</section><!--===================== SERVICES ===================-->
+
+
+
+
+<!--================= FEATURES ==================-->
+
+<section class="row w-100 py-0 bg-light" id="features">
+<div class="col-lg-6 col-img"></div>
+<div class="col-lg-6 py-5">
+<div class="container">
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<h6 class="text-primary">3 Easy Steps</h6>
+<h1>Welcome to the VISIT</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque
+fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+
+<div class="feature d-flex mt-5">
+<div class="iconbox me-3">
+<i class="bi bi-person-fill-check"></i>
+</div>
+<div>
+<h5>Register Now</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo </p>
+</div>
+</div>
+<div class="feature d-flex">
+<div class="iconbox me-3">
+<i class="bi bi-geo-alt-fill"></i>
+</div>
+<div>
+<h5>Book Your Destination</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo </p>
+</div>
+</div>
+<div class="feature d-flex">
+<div class="iconbox me-3">
+<i class="bi bi-airplane-fill"></i>
+</div>
+<div>
+<h5>Ready To Fly</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo </p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section><!--================== FEATURES END ================== -->
+
+<!--========================== DISCOUNT ================== -->
+
+<div class="container-xxl py-5 destination">
+<div class="container">
+<div class="text-center">
+<h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
+<h1 class="mb-5">Discount Offers</h1>
+</div>
+
+<div class="row g-3">
+<div class="col-lg-7 col-md-6">
+<div class="row g-3">
+<div class="col-lg-12 col-md-12 card-effect">
+<a href="" class="d-block position-relative overflow-hidden">
+<img src="img/pd-1-thai.webp" alt="" class="img-fluid">
+<div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
+30% off</div>
+<div
+class="bg-white text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+Phuket, Thailand</div>
+
+</a>
+</div>
+<div class="col-lg-6 col-md-6 card-effect">
+<a href="" class="d-block position-relative overflow-hidden">
+<img src="img/pd-2-portugal.webp" alt="" class="img-fluid">
+<div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
+25% off</div>
+<div
+class="bg-white text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+Algarve, Portugal</div>
+
+</a>
+</div>
+<div class="col-lg-6 col-md-6 card-effect">
+<a href="" class="d-block position-relative overflow-hidden">
+<img src="img/pd-3-panama.webp" alt="" class="img-fluid">
+<div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">
+50% off</div>
+<div
+class="bg-white text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+Bocas del Toro, Panama</div>
+
+</a>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-6 card-effect" style="min-height: 350px;">
+<a href="" class="d-block position-relative h-100 overflow-hidden">
+<img src="img/pd-4-morocco.webp" alt="" class="img-fluid position-absolute w-100 h-100"
+style="object-fit: cover;">
+<div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">71% off
+</div>
+<div class="bg-white text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">
+Taghazout, Morocco</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!--================= Discount END ======================-->
+
+<!--=========================== Arrangement Section =========================-->
+
+<section id="portfolio" class="Location is yours arrangment is our bg-light">
+<div class="container-fluid">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-primary">Location is yours arrangment is our</h6>
+<h1>Extra Arrangement we Provide</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+<div class="row g-3">
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-party.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Beach Party</h4>
+<h6 class="text-white">$999 to $100k</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-wedding.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Beach Wedding</h4>
+<h6 class="text-white">$999 to $100k</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-luxurious-p-beach.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Luxurious Private Beaches</h4>
+<h6 class="text-white">$100k to $1M</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-surf-2.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Surf Instructor</h4>
+<h6 class="text-white">Free</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-luxuarious-resorts.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Luxury Resorts</h4>
+<h6 class="text-white">$999 to $100k</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="project">
+<img src="img/p-jetski.jpg" alt="">
+<div class="overlay">
+<div>
+<h4 class="text-white">Jetski Rides</h4>
+<h6 class="text-white">Free</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><!--================= Arrangement Section ====================-->
+
+<!--==================== PRICING ===================-->
+
+<section id="SECTION1" class="PRICING bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-danger">PRICING</h6>
+<h1>Our low to High Cost Packages</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+<div class="row g-4">
+<div class="col-lg-3 col-sm-6">
+<div class="pricing card-effect text-center">
+<h6 class="text-danger">STARTER (each)</h6>
+<h1>$499</h1>
+<hr>
+<ul class="list-unstyled mb-4">
+<li><i class='bx bxs-check-circle'></i>
+Visa</li>
+<li><i class='bx bxs-check-circle'></i>
+Tour Webinar</li>
+<li><i class='bx bxs-check-circle'></i>
+3 day stay normal Hotel</li>
+<li><i class='bx bxs-check-circle'></i>
+Jetski</li>
+<li><i class='bx bxs-check-circle'></i>Surf Instructor</li>
+</ul>
+<button class="btn btn-danger">Get Started</button>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="pricing card-effect text-center">
+<h6 class="text-danger">STARTER (each)</h6>
+<h1>$999</h1>
+<hr>
+<ul class="list-unstyled mb-4">
+<li><i class='bx bxs-check-circle'></i>
+VISA</li>
+<li><i class='bx bxs-check-circle'></i>
+Tour Webinar</li>
+<li><i class='bx bxs-check-circle'></i>
+3 day stay in normal hotal</li>
+<li><i class='bx bxs-check-circle'></i>
+Car Rent</li>
+<li><i class='bx bxs-check-circle'></i>Jetski&Surf instructor</li>
+</ul>
+<button class="btn btn-danger">Get Started</button>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="pricing card-effect text-center">
+<h6 class="text-danger">STARTER (each)</h6>
+<h1>$10k</h1>
+<hr>
+<ul class="list-unstyled mb-4">
+<li><i class='bx bxs-check-circle'></i>
+VISA</li>
+<li><i class='bx bxs-check-circle'></i>
+Tour Webinars</li>
+<li><i class='bx bxs-check-circle'></i>
+Luxury Resorts</li>
+<li><i class='bx bxs-check-circle'></i>
+Luxury Car Rent</li>
+<li><i class='bx bxs-check-circle'></i>Jetski&Surf instructor</li>
+</ul>
+<button class="btn btn-danger">Get Started</button>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6">
+<div class="pricing card-effect text-center">
+<h6 class="text-danger">STARTER (each)</h6>
+<h1>$100k</h1>
+<hr>
+<ul class="list-unstyled mb-4">
+<li><i class='bx bxs-check-circle'></i>
+VISA</li>
+<li><i class='bx bxs-check-circle'></i>
+Tour Webinar</li>
+<li><i class='bx bxs-check-circle'></i>
+Private Beach with Luxurious Villa</li>
+<li><i class='bx bxs-check-circle'></i>
+Luxurious Car Rent</li>
+<li><i class='bx bxs-check-circle'></i>Jetski&Surf instructor</li>
+</ul>
+<button class="btn btn-danger">Get Started</button>
+</div>
+</div>
+</div>
+</div>
+</section><!--========================== PRICING ===========================-->
+
+<!--=============================== TEAM =============================-->
+
+<section id="team">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-primary">TEAM</h6>
+<h1>Meet Our Crew Members</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-6">
+<div class="our-team">
+<div class="pic">
+<img src="Img/hasnain3.jpeg" alt="team" class="img-fluid">
+</div>
+<div class="content">
+<h3 class="title text-white">Hasnain Ashfaq</h3>
+<span class="post">Front-end developer</span>
+<ul class="social primary social-icons">
+<li><a href="#" class="fa fa-facebook-square"></a></li>
+<li><a href="#" class="fa fa-youtube-play"></a></li>
+<li><a href="#" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="our-team">
+<div class="pic">
+<img src="Img/UMER1.jpg" alt="team" class="img-fluid">
+</div>
+<div class="content">
+<h3 class="title text-white">Muhammad Umer</h3>
+<span class="post">Front-end developer</span>
+<ul class="social primary social-icons">
+<li><a href="#" class="fa fa-facebook-square"></a></li>
+<li><a href="#" class="fa fa-youtube-play"></a></li>
+<li><a href="#" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+<div class="our-team">
+<div class="pic">
+<img src="Img/hashim4.jpeg" alt="team" class="img-fluid">
+</div>
+<div class="content">
+<h3 class="title text-white">Muhammad Hashim</h3>
+<span class="post">Front-end developer</span>
+<ul class="social primary social-icons">
+<li><a href="#" class="fa fa-facebook-square"></a></li>
+<li><a href="#" class="fa fa-youtube-play"></a></li>
+<li><a href="#" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><!--======================== TEAM ==========================-->
+
+<!--========================== NEWS FOR MONTH ======================= -->
+
+<section id="blog" class="bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-primary">Updated since 21-Nov-2022</h6>
+<h1>News Of The Month</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+<div class="row g-4">
+<div class="col-md-8">
+<div class="blog-post card-effect">
+<img src="img/b-1 -qatar.jpg" alt="">
+<h5 class="mt-4"><a href="#">Doha, Qatar</a></h5>
+<p>Qatar Tourism Opens 3 Beach Clubs in Doha Free of Cost </p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="blog-post card-effect">
+<img src="img/b-3-book.png" alt="">
+<h5 class="mt-4"><a href="#">Top Sale Visitors Guide</a></h5>
+<p>The Official Myrtle Beach Area Visitors Guide has everything you need to plan the perfect
+vacation to The Beach. </p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<!--========================== NEWS FOR MONTH ======================= -->
+
+<!--====================== Owl carousel Review slider =========================-->
+<section id="slider" class="pt-5">
+<div class="container">
+<h1 class="text-center" id="SECTION3"><b>Reviews</b></h1>
+
+<div class="slider">
+<div class="owl-carousel">
+<div class="slider-card">
+<div class="d-flex justify-content-center align-items-center mb-4">
+<img src="img/pic1.png" alt="">
+</div>
+<h5 class="mb-0 text-center"><b>Mark Andrew</b></h5>
+<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+</div>
+<div class="slider-card">
+<div class="d-flex justify-content-center align-items-center mb-4">
+<img src="img/pic2.png" alt="">
+</div>
+<h5 class="mb-0 text-center"><b>John Andrew</b></h5>
+<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+</div>
+<div class="slider-card">
+<div class="d-flex justify-content-center align-items-center mb-4">
+<img src="img/pic3.png" alt="">
+</div>
+<h5 class="mb-0 text-center"><b>Andersen Andrew</b></h5>
+<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+</div>
+<div class="slider-card">
+<div class="d-flex justify-content-center align-items-center mb-4">
+<img src="img/pic4.png" alt="">
+</div>
+<h5 class="mb-0 text-center"><b>David Andrew</b></h5>
+<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+</div>
+<div class="slider-card">
+<div class="d-flex justify-content-center align-items-center mb-4">
+<img src="img/team3.jpg" alt="">
+</div>
+<h5 class="mb-0 text-center"><b>Daneil Marshall</b></h5>
+<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ====================== end owl caraousel slider ====================-->
+
+<!--======================= Review Button start ===========================-->
+<div class="feeedback w-100 vh-100 d-flex justify-content-center align-items-center">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 mx-auto text-center">
+<button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal"
+data-bs-target="#exampleModal">FEEDBACK</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal"
+aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<form role="form" autocomplete="off">
+<div class="mb-3">
+<input type="text" name="fname" id="" class="form-control"
+placeholder="First Name" required>
+</div>
+<div class="mb-3">
+<input type="text" name="lname" id="" class="form-control"
+placeholder="Last Name" required>
+</div>
+<div class="form-group">
+<input type="text" name="" id="" class="form-control"
+placeholder="Regarding:" required>
+</div>
+<div class="mb-3">
+<textarea type="text" class="form-control" name="" id=""
+placeholder="we will happy to know your feedback:" required></textarea>
+</div>
+<div class="mb-3">
+<button type="submit" class="btn-primary btn-md">Send message</button>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary"
+data-bs-dismiss="modal">Close</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--======================== REVIEW SECTION END ========================-->
+
+
+<!-------------------
+start views section
+--------------------->
+
+<section class="project">
+<div class="container heading text-center">
+<p class="views font-weight-bold text-center">Website views</p>
+
+</div>
+
+<div class="container">
+<div class="row d-flex justify-content-around align-item-center text-center">
+<div class="col-md-2 col-6 ">
+<h1 class="counter">1500</h1>
+<p>Happy Clients</p>
+</div>
+
+<div class="col-md-2 col-6">
+<h1 class="counter">1200</h1>
+<p>Awards won</p>
+</div>
+
+<div class="col-md-2 col-6">
+<h1 class="counter">150</h1><span class="k">K</span>
+<p>Website views</p>
+</div>
+
+<div class="col-md-2 col-6">
+<h1 class="counter">1500</h1>
+<p>Clients Go</p>
+</div>
+
+
+</div>
+</div>
+
+</section>
+
+<!--------------------- 
+End views section 
+---------------------->
+
+
+<!--========================= CONTACT ============================-->
+
+<section id="SECTION2">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md-8 mx-auto text-center">
+<h6 class="text-primary">CONTACT</h6>
+<h1>Get In Touch</h1>
+<p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+</div>
+</div>
+
+<form action="" class="row g-3 justify-content-center">
+<div class="col-md-5">
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+<div class="col-md-5">
+<input type="text" class="form-control" placeholder="Enter E-mail">
+</div>
+<div class="col-md-10">
+<input type="text" class="form-control" placeholder="Enter Subject">
+</div>
+<div class="col-md-10">
+<textarea name="" id="" cols="30" rows="5" class="form-control"
+placeholder="Enter Message"></textarea>
+</div>
+<div class="col-md-10 d-grid">
+<button class="btn btn-primary">Contact</button>
+</div>
+</form>
+
+</div>
+</section><!--======================== CONTACT ======================-->
+
+<!---scrolling ticker with current date,time and location --->
+<div class="container mt-5">
+<div class="row">
+<div class="col-md-12">
+<div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+<div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2 px-1 news"><span
+class="d-flex align-items-center">&nbsp;<h3 class="font-effect-emboss"><i
+class="bi bi-signpost-fill"></i> BeautyOfBeaches</h3></span></div>
+<marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
+onmouseout="this.start();">
+<h5 id="time-scroll"></h5>
+</marquee>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!---------==============---- 
+Footer 
+-================------------->
+
+<footer>
+<div class="footer-top">
+<div class="container">
+<div class="row gy-4">
+<div class="col-lg-4">
+<h3 class="font-effect-emboss"><i class="bi bi-signpost-fill"></i> BeautyOfBeaches</h3>
+</div>
+<div class="col-lg-3 col-md-6">
+<a href="gallery.html">
+<h5 class="text-white mb-3">Gallery</h5>
+</a>
+<div class="row g-2 pt-2">
+<div class="col-lg-4">
+<img src="img/background.jpg.jpg" alt="" class="img-fluid bg-light p-1">
+</div>
+<div class="col-4">
+<img src="img/Copacabana, Rio de Janeiro, Brazil.webp" alt=""
+class="img-fluid bg-light p-1">
+</div>
+<div class="col-4">
+<img src="img/Navagio Beach, Zakynthos, Greece.webp" alt=""
+class="img-fluid bg-light p-1">
+</div>
+<div class="col-4">
+<img src="img/Santa Monica Beach, California.webp" alt=""
+class="img-fluid bg-light p-1">
+</div>
+<div class="col-4">
+<img src="img/South Beach, Miami, Florida.webp" alt="" class="img-fluid bg-light p-1">
+</div>
+<div class="col-4">
+<img src="img/Waikiki, Honolulu, Hawaii.webp" alt="" class="img-fluid bg-light p-1">
+</div>
+
+</div>
+
+</div>
+<div class="col-lg-2">
+<h5 class="text-white">Brand</h5>
+<ul class="list-unstyled">
+<li><a href="#3 Easy Steps">About</a></li>
+<li><a href="#Our Services Over The Globe ">Services</a></li>
+<li><a href="#Location is yours arrangment is our">Features</a></li>
+<li><a href="#PRICING">Pricing</a></li>
+</ul>
+</div>
+<div class="col-lg-2">
+<h5 class="text-white">More</h5>
+<ul class="list-unstyled">
+<li><a href="#">FAQ's</a></li>
+<li><a href="#">Privacy & Policy</a></li>
+<li><a href="#">Warranty</a></li>
+<li><a href="#">Shipment</a></li>
+</ul>
+</div>
+<div class="col-lg-4 text-white">
+<h5 class="text-white">Contact</h5>
+<ul class="list-unstyled">
+<li>Address: 2715 Ash Dr. San Jose, South Dakota 83475</li>
+<li>Email: jackson.graham@example.com</li>
+<li>Phone: (603) 555-0123</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom py-3">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p class="mb-0 text-danger">© 2020 copyright all right reserved | Designed with <i
+class="bx bx-heart text-danger"></i> by Team of Beautiful Beaches</p>
+</div>
+<div class="col-md-6">
+<div class="social-icons">
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class='bi bi-twitter'></i></a>
+<a href="#"><i class='bi bi-instagram'></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<!---------==============---- 
+Footer END
+-================------------->
+
+
+
+
+
+
+
+<!---- Bootstrap js----->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!---- jQuery ----->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
+
+</body>
+
+</html>
